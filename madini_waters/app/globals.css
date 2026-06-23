@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+:root {
+  /* Extracted from inline Aquaterias Theme Styles */
+  --color-main: #21b6ff;
+  --color-second: #aec556;
+  --color-black: #0c0c0c; /* Standard dark section bg */
+  --color-black-dark: #002579;
+  --color-white: #ffffff;
+  --color-gray: #f1f6fb;
+  --text-dark: #002c8f;
+}
+
+html,
+body {
+  font-family: var(--font-main), sans-serif;
+  font-weight: 400;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+.header,
+.font-headers,
+.breadcrumbs {
+  font-family: var(--font-headers), serif;
+  font-weight: 900;
+}
+
+/* Global Button & Link Resets from the Theme */
+a {
+  color: var(--color-main);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  color: var(--color-white);
+}
+
+.color-main {
+  color: var(--color-main) !important;
+}
+.color-second {
+  color: var(--color-second) !important;
+}
+.bg-color-black {
+  background-color: var(--color-black);
+}
+.bg-color-black-dark {
+  background-color: var(--color-black-dark);
+}
+.bg-color-theme_color {
+  background-color: var(--color-main);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  font-family: var(--font-main);
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-black-filled {
+  background-color: var(--color-black-dark);
+  color: var(--color-white);
+  border: 2px solid var(--text-dark);
+}
+
+.btn-black-filled:hover {
+  background-color: var(--color-second);
+  border-color: var(--color-second);
+}
+
+.btn-default {
+  background-color: var(--color-main);
+  color: var(--color-white);
+  box-shadow: 0 10px 30px rgba(33, 182, 255, 0.3);
+}
+
+.btn-default:hover {
+  background-color: var(--color-white);
+  color: var(--text-dark);
+}
